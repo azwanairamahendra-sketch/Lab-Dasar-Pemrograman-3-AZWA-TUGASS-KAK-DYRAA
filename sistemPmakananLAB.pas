@@ -30,7 +30,6 @@ begin
     total := harga * jumlah;
     if status = 1 then
     begin
-      { kalau member }
       if total >= 100000 then
       begin
         diskon := total * 0.15;
@@ -46,7 +45,6 @@ begin
     end
     else
     begin
-      { kalau bukan member }
       if total >= 100000 then
       begin
         diskon := total * 0.05;
